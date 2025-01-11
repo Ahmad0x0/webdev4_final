@@ -196,7 +196,7 @@ window.onload = function () {
             bookCard.innerHTML = `
                 <img src="${book.image_url}" alt="Book Image">
                 <h3>
-                    <a href="book-details.php?id=${book.id}&title=${encodeURIComponent(book.title)}">
+                    <a >
                         ${book.title}
                     </a>
                 </h3>
