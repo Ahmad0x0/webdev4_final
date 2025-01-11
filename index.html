@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+</head>
+
+
+
+
+
+
+<body>
+    <div id="backLoader"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#hero">
+                    <img src="images/logo.webp" alt="Fiction Books">
+                    <span>Majestic Library</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#hero"><i class="bi bi-house"></i>
+                                Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#about"><i
+                                    class="bi bi-info-circle"></i>
+                                About </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#collections">
+                                <i class="bi bi-collection"></i>
+
+                                Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#themes">
+                                <i class="bi bi-grid"></i> Themes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#books"><i class="bi bi-book"></i>
+                                Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom btn-rounded" href="#cart"><i class="bi bi-book"></i>
+                                My Cart</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Welcome to the Majestic Library</h1>
+            <p class="herop">A world of knowledge, creativity, and discovery.</p>
+            <a href="#collections" class="btn">Explore Collections</a>
+        </div>
+    </section> <br>
+
+
+
+
+
+
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>About The Majestic Library</h1>
+                    <p>
+                        Step into the realm of timeless knowledge and splendor. The Majestic Library is a sanctuary of
+                        books and wisdom,
+                        where each corner whispers tales of the past, present, and future. Our collection spans
+                        centuries and continents,
+                        offering an unparalleled experience for book enthusiasts and scholars alike.
+                    </p>
+                    <p>
+                        With gilded shelves, plush reading nooks, and an ambiance that evokes grandeur, we invite you to
+                        embark on a journey
+                        of discovery. Here, stories come alive, and dreams find their pages.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://media.istockphoto.com/id/157644071/photo/university-of-washington-suzzallo-library.jpg?s=612x612&w=is&k=20&c=8xPhMcQ7c77gScymhhfGd83tQVfFWvdZQtypuhtaFI8="
+                        alt="Majestic Library">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="collections">
+        <div class="rarest-books-container">
+            <h2 class="rarest-books-title">Our Rarest Books</h2>
+            <p class="rarest-books-description">
+                Discover treasures from our collection, carefully preserved through time.
+            </p>
+            <div id="rarest-books-list" class="books-grid">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="themes">
+        <div class="library-genres-container">
+            <h2 class="library-genres-title">Genres at Our Library</h2>
+            <div id="library-genres-list" class="library-genres-list">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="books">
+        <div class="special-books-container">
+            <h2 class="special-books-title">Featured Books</h2>
+            <div id="books-container" class="container">
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="special-books-container">
+        <div id="books-page">
+            <div id="books-container"></div>
+            <button id="view-cart-btn">View Cart</button>
+        </div>
+
+        <div id="cart-page" style="display: none;">
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+            <button id="back-to-books-btn">Back to Books</button>
+        </div>
+    </section>
+
+
+    <footer class="library-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Majestic Library. All Rights Reserved.</p>
+            <p>
+                <a href="mailto:info@majesticlibrary.com">info@majesticlibrary.com</a> |
+                <a href="tel:+1234567890">+1-234-567-890</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script>    
+    const loader = document.getElementById('backLoader');
+        window.addEventListener('load', function () {
+            loader.style.display = "none";
+        });</script>
+</body>
+
+</html>
